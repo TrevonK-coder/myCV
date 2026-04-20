@@ -733,71 +733,78 @@
     <div class="section-label">03 <span>— Projects</span></div>
 
     <div class="projects-grid">
-      <!-- FEATURED -->
+      <!-- FEATURED PROJECT: BOOTSTRAP 4 -->
       <div class="project-card featured reveal" id="card1">
         <div>
           <div class="project-num">01</div>
-          <div class="project-title">E-Commerce Platform</div>
-          <p class="project-desc">Full-stack e-commerce web application with user authentication, product management, and secure checkout. Built with a responsive React frontend and a Node/Express/MongoDB backend.</p>
+          <div class="project-title">Lumina Agency Landing Page</div>
+          <p class="project-desc">A premium, responsive agency website built using Bootstrap 4. Features a custom navigation bar, hero section with call-to-actions, service grid, and a stylized contact form. Optimized for all screen sizes using the Bootstrap grid system.</p>
           <div class="project-stack">
-            <span class="stack-badge">React</span>
-            <span class="stack-badge">Node.js</span>
-            <span class="stack-badge">Express</span>
-            <span class="stack-badge">MongoDB</span>
+            <span class="stack-badge">Bootstrap 4</span>
+            <span class="stack-badge">HTML5</span>
+            <span class="stack-badge">CSS3</span>
+            <span class="stack-badge">JavaScript</span>
+          </div>
+          <div style="margin-top:24px;">
+            <a href="https://trevonk-coder.github.io/bootstrap4_project/" target="_blank" class="btn btn-primary" style="padding:10px 20px;">Launch Site</a>
           </div>
         </div>
         <div class="project-visual">
-          <pre class="code-preview"><span class="cm">// auth middleware</span>
-<span class="kw">const</span> <span class="fn">protect</span> = <span class="kw">async</span> (req, res, next) => {
-  <span class="kw">let</span> token = req.headers.authorization
-  <span class="kw">if</span> (token?.startsWith(<span class="str">'Bearer'</span>)) {
-    token = token.split(<span class="str">' '</span>)[1]
-    <span class="kw">const</span> decoded = jwt.verify(token, SECRET)
-    req.user = <span class="kw">await</span> User.findById(decoded.id)
-    next()
-  }
-}</pre>
+          <pre class="code-preview"><span class="cm">// Bootstrap 4 Grid Implementation</span>
+<span class="kw">&lt;div</span> <span class="fn">class</span>=<span class="str">"container"</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;div</span> <span class="fn">class</span>=<span class="str">"row"</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;div</span> <span class="fn">class</span>=<span class="str">"col-md-4"</span><span class="kw">&gt;</span>
+      <span class="cm">&lt;!-- Card Content --&gt;</span>
+    <span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/div&gt;</span></pre>
         </div>
       </div>
 
-      <!-- CARD 2 -->
+      <!-- CARD 2: ONE-PAGE WEBSITE -->
       <div class="project-card reveal" id="card2">
         <div class="project-num">02</div>
-        <div class="project-title">Task Manager</div>
-        <p class="project-desc">CRUD-based task tracker application with RESTful API integration and SQL database backend. Supports task creation, updating, filtering, and deletion.</p>
-        <div class="project-stack">
-          <span class="stack-badge">JavaScript</span>
-          <span class="stack-badge">REST API</span>
-          <span class="stack-badge">MySQL</span>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="project-card reveal" id="card3">
-        <div class="project-num">03</div>
-        <div class="project-title">Portfolio Website</div>
-        <p class="project-desc">Personal portfolio website designed and deployed to showcase projects, technical skills, and GitHub repositories. Responsive and performance-optimized.</p>
+        <div class="project-title">One-Page Website</div>
+        <p class="project-desc">A clean and professional single-page website layout designed with a focus on typography, layout balance, and smooth navigation. Demonstrates mastery of semantic HTML5 and custom CSS layouts.</p>
         <div class="project-stack">
           <span class="stack-badge">HTML5</span>
           <span class="stack-badge">CSS3</span>
-          <span class="stack-badge">JavaScript</span>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://trevonk-coder.github.io/bootstrap4_project/One-Page%20Website/one_page_website.html" target="_blank" style="font-size:11px;color:var(--accent);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;">&#8599; View Site</a>
         </div>
       </div>
 
-      <!-- CARD 4 -->
+      <!-- CARD 3: HTML & CSS EXERCISES -->
+      <div class="project-card reveal" id="card3">
+        <div class="project-num">03</div>
+        <div class="project-title">HTML & CSS Drills</div>
+        <p class="project-desc">A comprehensive collection of technical exercises covering the fundamentals of web development, including complex Forms, HTML Tables, Lists, and advanced CSS styling techniques.</p>
+        <div class="project-stack">
+          <span class="stack-badge">HTML5</span>
+          <span class="stack-badge">CSS3</span>
+          <span class="stack-badge">Forms</span>
+          <span class="stack-badge">Tables</span>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://trevonk-coder.github.io/bootstrap4_project/Basic_HTML_and_CSS/" target="_blank" style="font-size:11px;color:var(--accent);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;">&#8599; View Repo Folder</a>
+        </div>
+      </div>
+
+      <!-- CARD 4: PREVIOUS PROJECT (VIDACUT) -->
       <div class="project-card reveal" id="card4" style="cursor:pointer;" onclick="window.open('https://trevonk-coder.github.io/vidacut','_blank')">
         <div class="project-num">04</div>
         <div class="project-title">VidaCut AI</div>
-        <p class="project-desc">AI-powered video editor with beat-synced cuts, smart color grading, and FFmpeg.wasm processing. Features an AI wizard mode, professional manual timeline editor, and a pre-production suite with script and visual logistics tools.</p>
+        <p class="project-desc">AI-powered video editor with beat-synced cuts and professional manual timeline editing. Built as a high-performance web application.</p>
         <div class="project-stack">
           <span class="stack-badge">React</span>
-          <span class="stack-badge">Vite</span>
           <span class="stack-badge">FFmpeg.wasm</span>
-          <span class="stack-badge">Capacitor</span>
-          <span class="stack-badge">Web Audio API</span>
+          <span class="stack-badge">Vite</span>
         </div>
         <div style="margin-top:12px;">
-          <a href="https://trevonk-coder.github.io/vidacut" target="_blank" style="font-size:11px;color:var(--accent);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;">&#8599; View Project</a>
+          <a href="https://trevonk-coder.github.io/vidacut" target="_blank" style="font-size:11px;color:var(--accent);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;">&#8599; Visit Platform</a>
+        </div>
+      </div>
         </div>
       </div>
     </div>
