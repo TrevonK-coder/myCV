@@ -104,12 +104,48 @@ A four-section interactive app demonstrating JavaScript functions and the `+=` o
 
 ---
 
+### C# & .NET Core Projects
+
+All C# console and web applications are hosted in the [`c-projects`](https://github.com/TrevonK-coder/c-projects) repository.
+
+#### 7. Car Insurance Portal
+**Folder:** `CarInsurance/`
+
+An ASP.NET Core MVC web application with Entity Framework Core and SQLite.
+- Computes monthly premium quotes server-side using a set of custom risk assessment business rules.
+- Integrates with an SQLite database schema.
+- Features a secure administrative portal detailing all registered policies.
+- Seeds database records automatically on first startup.
+
+---
+
+#### 8. Server Time Web App
+**Folder:** `ServerTimeWeb/`
+
+An ASP.NET Core Razor Pages application.
+- Uses `DateTime.Now` inside page handlers (`OnGet`) to compute server-side time.
+- Employs a custom JavaScript event handler in the view to continuously tick the clock.
+- Styled with dark-mode glassmorphism.
+
+---
+
+#### 9. Entity Framework Code-First Console App
+**Folder:** `EntityFrameworkCodeFirst/`
+
+A console application demonstrating ORM database modeling.
+- Employs Entity Framework Core Code-First mappings to generate database tables dynamically.
+- Auto-seeds a mock Student entity record.
+
+---
+
 ## 🛠 Technologies Used
 
-- **Languages:** HTML5, CSS3, JavaScript (ES6+)
-- **Frameworks:** Bootstrap 4.5.2
-- **Typography:** Google Fonts — Syne, DM Mono, Inter
-- **Tools:** VS Code, Git / GitHub, Chrome DevTools, GitHub Pages
+- **Languages:** HTML5, CSS3, JavaScript (ES6+), C# 12, SQL
+- **Frameworks:** React.js, Node.js, Express.js, Bootstrap 4.5.2, ASP.NET Core (MVC & Razor Pages), Entity Framework Core
+- **Databases:** SQLite, MySQL, MongoDB
+- **Typography:** Google Fonts — Syne, DM Mono, Inter, Outfit
+- **Tools:** VS Code, Visual Studio 2022, Git / GitHub, Chrome DevTools, GitHub Pages, postman
+
 
 ---
 
